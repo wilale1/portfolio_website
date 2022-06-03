@@ -94,3 +94,29 @@ header .container {
     width: 20rem;
     margin-right: 5rem;
 }
+
+/* Contact Section */
+
+.contact {
+    padding: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text {
+    margin-bottom: 5rem;
+}
+
+.contact-image {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-image img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact-image .image-container {
+    margin-right: 10rem;
+}
