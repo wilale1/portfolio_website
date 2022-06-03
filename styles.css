@@ -120,3 +120,18 @@ header .container {
 .contact-image .image-container {
     margin-right: 10rem;
 }
+
+/* Footer Section */
+
+footer {
+    border-top: black solid 1px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: crimson;
+    height: 6rem;
+}
+
+footer p {
+    margin-left: 2rem;
+}
