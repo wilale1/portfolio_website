@@ -60,4 +60,37 @@ header .container {
  .intro-text {
      width: 30rem;
      flex-direction: column;
+     line-height: 1.5rem;
+     font-size: 1.25rem;
  }
+
+ h2 {
+     font-size: 2rem;
+ }
+
+ /* Experience Section */
+
+ .experience {
+    padding: 10rem 5rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+.skills-image img {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.projects .container {
+    width: 20rem;
+    margin-right: 5rem;
+}
