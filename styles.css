@@ -3,8 +3,36 @@ body{
 }
 
 header {
+    height: 6rem;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px whitesmoke;
 }
+
+ header div {
+     margin-left: 2rem;
+     display: flex;
+ }
+
+header .container {
+    margin-right: 2rem;
+}
+
+ header a{
+     color: white;
+     margin-right: 1rem;
+     text-decoration: none;
+ }
+
+ main {
+    margin-top: 6rem;
+    background-color: antiquewhite;
+    height: 50rem;
+ }
