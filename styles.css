@@ -1,3 +1,6 @@
+
+/* Header Section */
+
 body{
     width: 100%;
 }
@@ -33,6 +36,28 @@ header .container {
 
  main {
     margin-top: 6rem;
-    background-color: antiquewhite;
-    height: 50rem;
+ }
+
+ /* Introduction Section */
+
+ .intro {
+     background-color: antiquewhite;
+     padding: 10rem 5rem;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .intro div {
+     display: flex;
+ }
+
+ .intro-image {
+     width: 25rem;
+     height: 25rem;
+     border: 2px black solid;
+ }
+
+ .intro-text {
+     width: 30rem;
+     flex-direction: column;
  }
