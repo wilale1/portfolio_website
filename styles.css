@@ -3,6 +3,8 @@
 
 body{
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -11,12 +13,12 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: #3B3B3B;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px whitesmoke;
+    border-bottom: solid 1px black;
 }
 
  header div {
@@ -32,6 +34,7 @@ header .container {
      color: white;
      margin-right: 1rem;
      text-decoration: none;
+     font-weight: bold;
  }
 
  main {
@@ -41,7 +44,7 @@ header .container {
  /* Introduction Section */
 
  .intro {
-     background-color: antiquewhite;
+     background-color: white;
      padding: 10rem 5rem;
      display: flex;
      justify-content: space-between;
@@ -81,7 +84,7 @@ header .container {
 .skills-image img {
     height: 3rem;
     width: 3rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .projects {
@@ -119,6 +122,7 @@ header .container {
 
 .contact-image .image-container {
     margin-right: 10rem;
+    text-align: center;
 }
 
 /* Footer Section */
@@ -128,10 +132,12 @@ footer {
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: crimson;
+    background-color: #1E1E1E;
     height: 6rem;
 }
 
 footer p {
     margin-left: 2rem;
+    font-weight: bold;
+    color: white;
 }
