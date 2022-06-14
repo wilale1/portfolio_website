@@ -26,19 +26,62 @@ header {
      display: flex;
  }
 
-header .container {
+ header .navNavigator {
     margin-right: 2rem;
+ }
+
+.navNavigator {
+    display: flex;
+    flex-direction: column;
 }
 
- header a{
-     color: white;
-     margin-right: 1rem;
-     text-decoration: none;
-     font-weight: bold;
- }
+.navNavigator div {
+    background-color: azure;
+    height: 0.2rem;
+    width: 2rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+}
 
  main {
     margin-top: 6rem;
+ }
+
+ .navNavigator div {
+    transition: 300ms linear 100ms;
+    z-index: 20;
+ }
+
+ .navNavigator :hover{
+    cursor: pointer;
+ }
+
+ .navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    border-left: 1px solid white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    align-items: center;
+ }
+
+ .navbar a {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+ }
+
+ .navbar .navNavigator {
+    margin-top: 1rem;
  }
 
  /* Introduction Section */
@@ -78,24 +121,52 @@ header .container {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
  }
-
-.skills-image img {
-    height: 3rem;
-    width: 3rem;
-    margin-right: 4rem;
-}
 
 .projects {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
 }
 
 .projects .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 20rem;
     width: 20rem;
-    margin-right: 5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.projects img {
+    margin: 4rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.projects .projectWC {
+    border: 1px solid black;
+}
+
+.projects .projectWIP {
+    width: 8rem;
+}
+
+.skills {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.skills-image img {
+    margin: 4rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 /* Contact Section */
@@ -123,6 +194,11 @@ header .container {
 .contact-image .image-container {
     margin-right: 10rem;
     text-align: center;
+}
+
+.contact-image .image-container a :hover{
+    opacity: .60;
+    transition: 300ms linear 100ms;
 }
 
 /* Footer Section */
