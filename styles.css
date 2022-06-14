@@ -184,6 +184,7 @@ header {
 .contact-image {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .contact-image img {
@@ -216,4 +217,15 @@ footer p {
     margin-left: 2rem;
     font-weight: bold;
     color: white;
+}
+
+/* responsivesness */
+
+@media screen and (max-width: 992px){
+    main .intro .intro-image {
+        display: none;
+    }
+    .projects .container {
+        margin-top: 5rem;
+    }
 }
